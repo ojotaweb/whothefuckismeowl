@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whothefuckismeowl</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Honk:MORF@15&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[url('assets/fondogatitos.png')] bg-repeat bg-fixed w-screen min-h-screen py-6 px-4 md:px-10 m-0 overflow-x-hidden flex flex-col items-center bg-transparent">
+    <!--VIDEO HIDDEN-->
+    <img 
+        id="gif-fondo" 
+        src="assets/videoassets/fishes1.gif" 
+        alt="Fondo Dinámico" 
+        class="hidden fixed inset-0 w-screen h-screen object-cover z-[-1]"
+    >
+    <!--FONDO DW HIDDEN-->
+    <img 
+        id="fondo-dw" 
+        src="assets/albumassets/dw/meowl.jfif"  
+       class="hidden fixed inset-0 w-screen h-screen object-cover z-[-1] ">
+
+    <!--TITULO-->
+    <div id="cartel-titulo" class="relative mx-auto z-50 rotate-[-3deg] w-full max-w-[1000px] h-[140px] flex-shrink-0">
+        <img 
+            src="assets/cartel_stars-removebg-preview.png" 
+            alt="cartel ppal" 
+            class="w-full h-auto drop-shadow-[4px_4px_0px_rgba(0,0,0,0.2)]"
+        >
+        <div class="absolute top-[45%] md:top-[60px] pr-[65px] w-full text-center px-2 transform -translate-y-1/2 md:translate-y-0">
+            <h1 class="font-titulo text-3xl md:text-5xl">¡Feliz Primer Añito!</h1>
+            <h3 class="font-titulo text-2xl md:text-4xl">a mi wigger favorito</h3>
+         </div>
+    </div>
+   
+    <!--cuadrado naranja-->
+    <main id="pantalla-inicio" class="flex flex-row flex-wrap justify-center gap-10 md:gap-16 items-center w-full max-w-[1600px] min-h-[calc(100vh_-_160px)] bg-orange-200 rounded-2xl shadow-sm relative mt-4 pt-[100px] px-6 md:px-16 pb-10 z-0">
+    
+         <!--STICKERS-->
+    
+        <div id="sticker-scuba1" class="absolute top-[10px] left-[20px] z-30 w-[80px] md:w-[120px]">
+            <img src="assets/scuba.gif" alt="Buceador bailando" class="w-full h-full object-contain">
+        </div>
+        <div id="sticker-scuba2" class="absolute top-[10px] right-[20px] z-30 w-[80px] md:w-[120px]">
+            <img src="assets/scuba.gif" alt="Buceador bailando" class="w-full h-full object-contain">
+        </div>
+
+<!--caja carta-->
+        <div onclick="revelarRegalo(this)" class="relative h-[550px] w-full max-w-[450px] flex-shrink-0 rounded-xl shadow-md overflow-hidden cursor-pointer transition-all duration-300">
+            <div class="clase-regalo absolute inset-0 z-20 bg-pink-300 transition-all duration-700 ease-in-out transform hover:scale-105">
+                <img src="assets/covercarta1.jfif" class="w-full h-full absolute inset-0 z-0 object-cover">
+                <h4 class="absolute bottom-4 left-4 z-10 font-general text-2xl text-amber-950 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] animate-pulse">
+                    Click para abrir!
+                </h4>
+            </div>
+
+            <div class="absolute inset-0 z-10 overflow-hidden">
+                <img src="assets/cartafondo3.jfif" class="w-full h-full absolute inset-0 z-0 object-cover">
+                <div class="relative z-10 px-12 w-full h-full pt-14">
+                    <p class="font-general  text-lg md:text-xl text-amber-950 leading-[36px] tracking-wide">
+                        <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⸜(｡˃ ᵕ ˂ )⸝♡<br>-->
+                        Si hablamos de formas de expresar amor, a mi me cuesta bastante poder comprimir todo lo que siento en unas palabritas. Ademas escribirte algo lindo diciendote lo mucho que te amo, porque hace un año que estamos juntitos, es solo una excusa, porque lo siento todos los dias, cada dia un poquito mas. Por las dudas te hago acordar, <br> te amo mucho <br> bordito
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+<!--CAJA CON BOTONES-->
+        <div class="h-[550px] w-full max-w-[500px] flex-shrink-0 bg-orange-100/80 rounded-xl shadow-md p-6 md:p-8 border border-orange-300/30 relative overflow-hidden">
+            <img src="assets/fondo-cartelb.jpg" class="w-full h-full absolute inset-0 z-0 object-cover object-[50%_80%]">
+            
+            <div class="relative z-10 flex flex-col justify-between h-full w-full">  
+                <div class="flex flex-col gap-4">
+                    <h3 class="font-titulo text-4xl text-amber-950">¡Me gustas!</h3>
+                    <p class="font-general text-base md:text-2xl text-amber-900 leading-relaxed">
+                        no solo me gustas vos si no también que pasemos tiempo juntos, por eso, despues de tanto tiempo compartido, sé que nos gusta...
+                    </p>
+                </div>
+
+                <!--parte BOTON-->
+                <div class="relative z-11 flex flex-col justify-center items-center h-[250px] w-full"> 
+                    <img src="assets/fondo-boton.jpg" class="w-full h-full absolute inset-0 z-0 object-contain">
+                    <button onclick="irAlAlbum(1)" class="btn absolute bottom-16 p-0 min-h-0 w-fit mx-auto block bg-transparent border-none hover:bg-transparent z-10 shadow-md transition-all transform hover:scale-115 active:scale-98 cursor-pointer">
+                        <img src="assets/button.png" class="w-auto h-[40px] block">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+<!--TERCERA CAJA-->
+        <div class="h-[550px] w-full max-w-[420px] flex-shrink-0 bg-white/80 rounded-xl shadow-md p-6 border border-orange-300/30 relative overflow-hidden">
+            <img src="assets/albumassets/dw/Jeregei.png" alt="Fondo" class="absolute inset-0 w-full h-full object-cover z-0">
+
+        <div id="vista-candado" class="relative z-10 flex flex-col justify-center items-center text-center h-full gap-4">
+
+        <!-- Input + Botón -->
+        <div class="flex flex-col gap-2 w-full max-w-[260px] mt-2">
+            <input 
+                type="password" 
+                id="input-clave" 
+                placeholder="Escribí la clave..." 
+                class="absolute top-[300px] left-[50px] w-[265px] h-[30px] px-4 py-2 rounded-md border-2 border-teal-500 bg-white/90 text-amber-950 outline-none text-center font-segoe text-sm shadow-md"
+                onkeypress="siPresionaEnter(event)"
+            >
+            <button 
+                onclick="validarClave()" 
+                class="absolute top-[295px] left-[320px] w-[40px] h-[40px] rounded-full flex items-center justify-center bg-teal-500 hover:bg-teal-500 text-amber-50 font-bold transition-colors cursor-pointer text-sm shadow-md active:scale-95"> 🡆
+            </button>
+        </div>
+
+        <!-- Mensaje de Error (arranca oculto) -->
+        <p id="mensaje-error" class="absolute top-[340px] left-[50px] w-[265px] h-[30px] text-rose-600 text-s font-semibold hidden animate-bounce">
+            Contraseña incorrecta!
+        </p>
+    </div>
+
+
+    <!-- 2. VISTA REVELADA (El Álbum Secreto - Arranca Oculto) -->
+    <div id="contenido-secreto" class="hidden relative z-10 flex flex-col h-full justify-between">
+        <div class="flex flex-col gap-3">
+            
+
+            <!-- Botón para abrir tu álbum secreto -->
+            <button onclick="irAlAlbum(28)" class="absolute top-[360px] left-[60px] w-[250px] h-[40px]  py-3 bg-gradient-to-r from-teal-100 to-teal-500 text-black font-segoe rounded-xl shadow-lg transition-transform transform hover:scale-102 active:scale-98 cursor-pointer mt-4 flex items-center justify-center gap-2">
+                <span>Entrar</span>
+            </button>
+        </div>
+
+        <!-- Botón opcional para volver a bloquear si quiere -->
+        <button onclick="volverABloquear()" class="text-xs text-amber-800/60 hover:text-amber-900 underline self-center cursor-pointer">
+            Volver a bloquear
+        </button>
+    </div>
+        </div>
+         
+    </main>
+<!--PAGS DE FOTOS-->
+
+<!--ALBUM PASO 1-->
+   <div id="album-paso-1" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gustan... 
+                </h4>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-4xl md:text-5xl text-lime-950 drop-shadow-sm">
+                    los gatitos
+                </h1>
+            </div>
+            
+            <div class="w-full columns-4 md:columns-5 gap-3 space-y-3 pt-6 pb-24 relative z-10">
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/fifi1.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/jeregatos1.JPG" alt="Momento 2" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-1deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/tris2.jpg" alt="Momento 3" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/vaca.JPG" alt="Momento 4" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/nosotrostris.JPG" alt="Momento 5" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/gatopando.jpg" alt="Momento 6" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/tris3.jpg" alt="Momento 7" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                 <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[1deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/loki1.jpg" alt="Momento 8" onclick="abrirZoom(this)" data-texto="terrible nazo..." class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/tris1.JPG" alt="Momento 6" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/gordos.jpg" alt="Momento 6" onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f1.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f2.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f3.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f4.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f5.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f6.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f7.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f8.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f9.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f10.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album1/f11.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+            </div>
+            <!--buttons-->
+            <button onclick="volverAlInicio()" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+            </button>
+            <button onclick="irAlAlbum(2)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+            </button>  
+        </div>
+    </div>
+
+<!--ALBUM 2-->
+    <div id="album-paso-2" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gusta... 
+                </h4>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-4xl md:text-5xl text-lime-950 drop-shadow-sm">
+                    comeeer
+                    
+                </h1>
+                <h5 class="font-general text-lg md:text-xl text-lime-900/80 ml-2 italic tracking-normal inline-block align-middle">el tema es que nos gusta tanto que a veces no llega a la foto.</h5>
+            </div>
+            
+            
+            <div class="w-full columns-4 md:columns-5 gap-3 space-y-3 pt-6 pb-24 relative z-10">
+
+                 <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/cafe2.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/pancho1.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/pumple3.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/fideos.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/ugis.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/moishe.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/sushi.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/pumple1.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                 <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/comida.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/pancho2.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                 <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/cafe1.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                 <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/costa.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/chototorta.PNG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                 <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album2/pumple2.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/ratacome.gif" alt="Bicheador bailando" class="w-full h-auto object-contain">
+                </div>
+
+            
+
+                <!--buttons-->
+                <button onclick="irAlAlbum(1)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(3)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button> 
+            </div>
+        </div>
+    </div>
+
+<!--ALBUM 3-->
+    <div id="album-paso-3" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+    <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+    
+        <div class="text-left mb-2 flex-shrink-0">
+            <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                nos gusta... 
+            </h4>
+        </div>
+        <div class="text-center mb-6 flex-shrink-0">
+            <h1 class="font-titulo text-3xl md:text-4xl text-lime-950 drop-shadow-sm">
+                escuchar música
+            </h1>
+        </div>
+        
+        
+        <div class="w-full max-w-[500px] mx-auto rounded-xl overflow-hidden shadow-md ">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3paCyhg48tVcL4Txv8ZDnx?utm_source=generator&si=2101cc1b84c84835" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+        </div>
+        
+
+        
+        <div class="w-full max-w-[280px] md:max-w-[420px] aspect-square mx-auto mt-8 mb-16 relative flex items-center justify-center z-10">
+            <img 
+                src="assets/albumassets/album3/vinilo.png" 
+                alt="Nuestra Playlist" 
+                class="w-full h-full object-contain animate-[spin_20s_linear_infinite]"
+            >
+        </div>
+
+       <!--buttons-->>
+        <button onclick="irAlAlbum(2)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+            <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+        </button>
+        <button onclick="irAlAlbum(4)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+            <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+        </button>
+
+    </div> 
+    </div> 
+
+<!--ALBUM 4-->
+    <div id="album-paso-4" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gusta... 
+                </h4>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-4xl md:text-5xl text-lime-950 drop-shadow-sm">
+                    estudiar
+                    
+                </h1>
+                <h5 class="font-general text-lg md:text-xl text-lime-900/80 ml-2 italic tracking-normal inline-block align-middle">(mentira)</h5>
+            </div>
+            <!--fotos-->
+            <div class="w-full columns-4 md:columns-4 gap-4 space-y-4 pt-6 pb-24 relative z-10">
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album4/slime.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/album4/gatos.gif" alt="gatos" class="w-full h-auto object-contain">
+                </div>
+                
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album4/juego.PNG" alt="Momento 3"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album4/conloki.jpg" alt="Momento 4"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album4/minecraft.jpg" alt="Momento 2"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album4/libro.JPG" alt="Momento 4"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album4/hs.jpg" alt="Momento 3"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/album4/6767.gif" alt="gatos" class="w-full h-auto object-contain">
+                </div>
+                
+
+             <!--buttons-->
+                <button onclick="irAlAlbum(3)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(5)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+        </div>
+    </div>
+    </div>
+
+<!--ALBUM 5-->
+    <div id="album-paso-5" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class=" font-general absolute top-4 right-4 md:top-6 md:right-8 bg-lime-900/90 text-lime-100 text-xs md:text-sm px-3 py-1.5 md:px-4 md:py-2 rounded-full shadow-md backdrop-blur-xs flex items-center gap-1.5 border border-lime-700/50 pointer-events-none select-none z-20">
+                <span>💡 Click izq: voltear | Click der: zoom</span>
+            </div>
+
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gustan... 
+                </h4>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-4xl md:text-5xl text-lime-950 drop-shadow-sm">
+                    las cartitas de pokemon
+                    
+                </h1>
+            </div>
+            
+            <!--arrancan cartas-->
+            
+        <div class="flex flex-wrap justify-center gap-6 max-w-[900px] mx-auto p-4">
+
+            <!-- CARTA 1 -->
+            <div class="w-[250px] h-[350px] [perspective:1000px] cursor-pointer" onclick="voltearCarta(this)" oncontextmenu="abrirZoomCarta(event, this)">
+                <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] transition-transform shadow-lg rounded-xl">
+                    <!-- Dorso -->
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] z-10">
+                        <img src="assets/albumassets/album5/dorso.png" alt="Dorso" class="w-full h-full object-cover rounded-xl border-4 border-yellow-400">
+                    </div>
+                    <!-- Frente -->
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                        <img src="assets/albumassets/album5/poli.webp" alt="Carta 1" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTA 2 -->
+            <div class="w-[250px] h-[350px] [perspective:1000px] cursor-pointer" onclick="voltearCarta(this)" oncontextmenu="abrirZoomCarta(event, this)">
+                <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] transition-transform shadow-lg rounded-xl">
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] z-10">
+                        <img src="assets/albumassets/album5/dorso.png" alt="Dorso" class="w-full h-full object-cover rounded-xl border-4 border-yellow-400">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                        <img src="assets/albumassets/album5/mumu.png" alt="Carta 2" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTA 3 -->
+            <div class="w-[250px] h-[350px] [perspective:1000px] cursor-pointer" onclick="voltearCarta(this)" oncontextmenu="abrirZoomCarta(event, this)">
+                <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] transition-transform shadow-lg rounded-xl">
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] z-10">
+                        <img src="assets/albumassets/album5/dorso.png" alt="Dorso" class="w-full h-full object-cover rounded-xl border-4 border-yellow-400">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                        <img src="assets/albumassets/album5/amarillo.png" alt="Carta 3" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTA 4 (Pasa abajo) -->
+            <div class="w-[250px] h-[350px] [perspective:1000px] cursor-pointer" onclick="voltearCarta(this)" oncontextmenu="abrirZoomCarta(event, this)">
+                <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] transition-transform shadow-lg rounded-xl">
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] z-10">
+                        <img src="assets/albumassets/album5/dorso.png" alt="Dorso" class="w-full h-full object-cover rounded-xl border-4 border-yellow-400">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                        <img src="assets/albumassets/album5/bari.png" alt="Carta 4" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTA 5 (Pasa abajo) -->
+           <div class="w-[250px] h-[350px] [perspective:1000px] cursor-pointer" onclick="voltearCarta(this)" oncontextmenu="abrirZoomCarta(event, this)">
+                <div class="relative w-full h-full duration-700 [transform-style:preserve-3d] transition-transform shadow-lg rounded-xl">
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] z-10">
+                        <img src="assets/albumassets/album5/dorso.png" alt="Dorso" class="w-full h-full object-cover rounded-xl border-4 border-yellow-400">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                        <img src="assets/albumassets/album5/tym.png" alt="Carta 5" class="w-full h-full object-cover rounded-xl">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+               <!--buttons-->
+                <button onclick="irAlAlbum(4)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(6)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button> 
+            </div>    
+        </div>
+    </div>
+
+<!--ALBUM 6-->
+<div id="album-paso-6" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gusta... 
+                </h4>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h2 class="font-titulo text-4xl md:text-5xl text-lime-950 drop-shadow-sm">
+                    discutir por quien mando solicitud en instagram primero
+                    
+                </h2>
+            </div>
+            
+            
+             <div class="w-full columns-2 md:columns-2 gap-4 space-y-4 pt-6 pb-24 relative z-10">
+
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album6/foto1.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album6/foto2.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+               </div>
+                <!--buttons-->
+                <button onclick="irAlAlbum(5)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(7)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>  
+            
+        </div>
+    </div>  
+
+<!--ALBUM 7-->
+     <div id="album-paso-7" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="font-general absolute top-4 right-4 md:top-6 md:right-8 bg-transparent text-lime-900 text-base md:text-base px-3 py-1.5 md:px-4 md:py-2 rounded-full  flex items-center gap-1.5  pointer-events-none select-none z-20">
+                <span>Click en las portadas 🎬 </span>
+            </div>
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gusta... 
+                </h4>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-4xl md:text-5xl text-lime-950 drop-shadow-sm">
+                    ver pelis
+                    <img src="assets/albumassets/album7/letterboxd-mac-icon.png" alt="emoji" class="h-[1em] w-auto inline-block align-middle object-contain">
+                </h1>
+                <h5 class="font-general text-lg md:text-xl text-lime-900/80 ml-2 italic tracking-normal inline-block align-middle">algunas poquitas de las que vimos</h5>
+                
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-[1000px] mx-auto p-2">
+
+                <a href="https://letterboxd.com/ojotac/film/casino-royale-2006/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/casino.jpg" alt="Portada Película 1" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+
+                <a href="https://letterboxd.com/jeregonzalez_/film/superman-2025/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/superman.jfif" alt="Portada Película 2" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+
+                <a href="https://letterboxd.com/ojotac/film/the-zone-of-interest/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/zoi.jpg" alt="Portada Película 2" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+
+                <a href="https://letterboxd.com/jeregonzalez_/film/project-hail-mary/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/hailmary.jpg" alt="Portada Película 2" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+
+                <a href="https://letterboxd.com/ojotac/film/jujutsu-kaisen-0/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/jjk0.webp" alt="Portada Película 2" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+
+                <a href="https://letterboxd.com/jeregonzalez_/film/backrooms-2026/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/backrooms.jpg" alt="Portada Película 2" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+
+                <a href="https://letterboxd.com/ojotac/film/superbad/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/superbad.jpg" alt="Portada Película 2" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+
+                <a href="https://letterboxd.com/jeregonzalez_/film/heretic-2024/" target="_blank" rel="noopener noreferrer" 
+               class="group relative aspect-[2/3] rounded-xs overflow-hidden border border-zinc-700/60 shadow-md">
+                <img src="assets/albumassets/album7/heretic.jpg" alt="Portada Película 2" class="w-full h-full object-cover transition-opacity duration-200 group-hover:opacity-60">
+                </a>
+                
+               
+            </div>
+                <!--buttons-->
+                <button onclick="irAlAlbum(6)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(8)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>  
+            </div>
+        </div>
+    </div>
+
+<!--ALBUM 8-->
+    <div id="album-paso-8" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+    <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+    
+        <div class="text-left mb-2 flex-shrink-0">
+            <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                nos gusta... 
+            </h4>
+        </div>
+        <div class="text-center mb-6 flex-shrink-0">
+            <h1 class="font-titulo text-3xl md:text-4xl text-lime-950 drop-shadow-sm">
+                DORMIR jiji
+            </h1>
+        </div>
+       <div class="w-full grid grid-cols-3 gap-4 pt-6 pb-24 relative z-10">
+
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/jluli.JPG" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/yo1.jpg" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/ambos1.JPG" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/jtris.JPG" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/viaje.JPG" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/yo2.jpg" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/jcostado.jpg" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/ambos2.jpg" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid bg-white p-1.5 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album8/jpateado.jpg" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+
+            <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/album8/eepy1.gif" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/album8/eepy4.gif" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+            <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/album8/eepy3.gif" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+            </div>
+
+         </div>
+         <!--buttons-->
+                <button onclick="irAlAlbum(7)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(9)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button> 
+    </div>
+    </div>
+
+<!--ALBUM 9-->
+ <div id="album-paso-9" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gusta... 
+                </h4>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-3xl md:text-4xl text-lime-950 drop-shadow-sm">
+                    pensar que con sueldo mosquito podemos viajar...🦟
+                </h1>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-4xl md:text-5xl text-lime-950 drop-shadow-sm">
+                    che pero pudimos!
+                </h1>
+            </div>
+           
+            
+            <div class="w-full grid grid-cols-4 gap-4 pt-6 pb-24 relative z-10">
+
+               <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto1.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto2.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto3.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto4.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto5.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto6.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto7.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto8.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto9.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto10.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto11.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[-2deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album9/foto12.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                
+            
+
+                <!--buttons-->
+                <button onclick="irAlAlbum(8)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(10)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button> 
+            </div>
+        </div>
+    </div>
+
+<!--ALBUM 10-->
+<div id="album-paso-10" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="text-left mb-2 flex-shrink-0">
+                <h4 class="font-general text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    nos gusta... 
+                </h4>
+            </div>
+            <div class="text-center  flex-shrink-0">
+                <h1 class="font-titulo text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    sacar fotos
+                </h1>
+            </div>
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-titulo text-3xl md:text-4xl text-lime-950 drop-shadow-sm">
+                    ..pero me gustan mas cuando salis vos
+                </h1>
+            </div>
+
+            <div class="w-full columns-5 md:columns-5 gap-3 space-y-3 pt-6 pb-24 relative z-10">
+
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto1.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto2.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto3.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto4.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto5.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto6.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto7.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto8.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto9.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto10.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto11.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto12.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto13.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto14.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto15.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto16.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto17.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto18.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto19.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto20.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto21.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto22.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto23.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto24.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/foto25.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album10/fotor.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/kisscat.gif" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/sealslove.gif" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+
+
+             <!--buttons-->
+                <button onclick="irAlAlbum(9)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(11)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button> 
+            </div>
+        </div>
+    </div>
+
+<!--ALBUM 11-->
+<div id="album-paso-11" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            <div class="text-center mb-4 flex-shrink-0">
+                <h1 class="font-titulo text-2xl md:text-3xl text-lime-950 drop-shadow-sm">
+                    y a veces en tus fotos salgo yo...
+                </h1>
+            </div>
+            
+
+            <div class="w-full columns-5 md:columns-5 gap-3 space-y-3 pt-6 pb-24 relative z-10">
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c1.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c2.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c3.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c4.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c5.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c6.jpeg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c7.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c8.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c9.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c10.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c14.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c12.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c13.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album11/c11.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+
+                <div class="break-inside-avoid w-full mb-3 pointer-events-none transform hover:scale-110 transition-transform duration-300">
+                    <img src="assets/albumassets/smile-serious.gif" alt="Momento "  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div>
+                
+            
+             <!--buttons-->
+                <button onclick="irAlAlbum(10)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="irAlAlbum(12)" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button> 
+            </div>
+        </div>
+    </div>
+
+<!--ALBUM 12-->
+<div id="album-paso-12" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-black/40 backdrop:backdrop-blur-sm">
+    
+        <div class="w-full max-w-[1200px] h-auto bg-lime-200 rounded-2xl p-6 md:p-10 flex flex-col shadow-2xl relative mb-10">
+        
+            
+            <div class="text-center mb-6 flex-shrink-0">
+                <h1 class="font-general text-3xl md:text-4xl text-lime-950 drop-shadow-sm">
+                    Así que si alguna vez se te cruza pensar que no te amo, sabé que todo lo que me gusta hacer me gusta más si lo hago con vos
+                    <img src="assets/albumassets/heart-love.gif" alt="emoji" class="h-[1em] w-auto inline-block align-middle object-contain">
+                </h1>
+            </div>
+            
+            
+           
+            
+            <div class="w-full grid grid-cols-4 gap-4 pt-6 pb-24 relative z-10">
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album12/f1.jpg" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album12/f2.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album12/f3.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+                <div class="break-inside-avoid bg-white p-1 rounded-xl shadow-md transform hover:rotate-[3deg] transition-transform duration-300 w-full mb-3">
+                    <img src="assets/albumassets/album12/f4.JPG" alt="Momento 1"  onclick="abrirZoom(this)" class="w-full h-auto rounded-lg cursor-zoom-in">
+                </div> 
+            </div>
+                <div class="text-right mb-12 flex-shrink-0">
+                <h4 class="font-titulo text-1xl md:text-2xl text-lime-950 drop-shadow-sm">
+                    te amo. Cam 
+                </h4>
+            </div>
+
+             <!--buttons-->
+                <button onclick="irAlAlbum(11)" class="absolute bottom-4 left-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-izq.png" class="w-auto h-[45px] md:h-[55px]">
+                </button>
+                <button onclick="volverAlInicio()" class="absolute bottom-4 right-4 text-4xl cursor-pointer p-2 rounded-full hover:scale-110 transition-transform z-20">
+                <img src="assets/albumassets/flecha-der.png" class="w-auto h-[45px] md:h-[55px]">
+                </button> 
+            </div>
+        </div>
+    </div>
+<!--ALBUM DEEPWEB-->
+ <div id="album-paso-28" class="hidden fixed inset-0 w-screen min-h-screen py-10 md:py-16 px-4 md:px-[40px] z-10 flex flex-col justify-start items-center overflow-y-auto bg-transparent">
+       <div class="fixed top-6 left-6 z-30 pointer-events-none">
+        <h1 class="font-titulo text-3xl md:text-5xl text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.9)] tracking-wide">
+            La Deep Web de tus fotos
+        </h1>
+       </div>
+        <div class="relative w-full min-h-[120vh] md:min-h-screen z-20 pt-20">
+
+        <!-- FOTO 1: Arriba a la derecha -->
+        <div class="absolute top-[3%] left-[0%] md:left-[0%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[2deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/ambos1.JPG" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[15%] left-[16%] md:left-[16%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[-1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/bigote.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this) " data-texto="actually la primera foto que te saqué 🤓👆"
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[3%] left-[32%] md:left-[32%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/jcerca1.JPG" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[10%] left-[48%] md:left-[48%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[-2deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/ambos2.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+         <div class="absolute top-[1%] left-[64%] md:left-[64%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[2deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/mascara.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[50%] left-[0%] md:left-[0%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[-2deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/tits.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[60%] left-[16%] md:left-[16%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/jcerca2.JPG" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[50%] left-[32%] md:left-[32%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[-1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/ambos3.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[55%] left-[48%] md:left-[48%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[2deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/bra.JPG" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[50%] left-[64%] md:left-[64%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[-1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/ambos4.JPG" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[97%] left-[0%] md:left-[0%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[2deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/jcerca4.JPG" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+        
+        <div class="absolute top-[105%] left-[16%] md:left-[16%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[-1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/flores.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[97%] left-[32%] md:left-[32%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/pelu.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[102%] left-[48%] md:left-[48%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[-1deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/ambos5.jpg" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        <div class="absolute top-[102%] left-[64%] md:left-[64%] w-[15%] md:w-[15%]  pt-8 md:pt-10 px-1.5 pb-1.5 rounded-xs shadow-2xl border transform rotate-[2deg] hover:rotate-0 hover:scale-105 transition-all duration-300 z-20 flex items-center justify-center">
+            <img 
+            src="assets/albumassets/dw/virgen.JPG" 
+            alt="Foto 1" onclick="abrirZoom(this)" 
+            class="w-full h-full object-cover rounded-xs cursor-zoom-in">
+    
+            <img 
+            src="assets/albumassets/dw/borde.png" 
+            alt="Marco Windows" 
+            class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10">
+        </div>
+
+        </div>
+
+
+        <div class="fixed bottom-6 right-6 z-40 flex gap-4">
+        <button onclick="volverAlInicio()" class="cursor-pointer p-2 hover:scale-110 transition-transform ">
+            <img src="assets/albumassets/dw/garbage.gif" class="w-auto h-[70px]">
+        </button>
+        </div>
+
+        
+    </div>
+    </div>
+
+
+
+<!--JS-->
+   <dialog id="modal-zoom" onclick="cerrarZoom()" class="fixed inset-0 m-auto bg-transparent border-none p-0 backdrop:bg-black/80 backdrop:backdrop-blur-sm z-50 max-w-[95vw] md:max-w-[85vw] h-auto max-h-[90vh] outline-none cursor-zoom-out">
+    <div id="modal-contenedor-tarjeta" class="relative w-full h-full p-4 md:p-6 flex flex-col md:flex-row gap-6 items-center justify-center">
+       
+        <div class="w-full md:w-2/3 h-full max-h-[60vh] md:max-h-[80vh] flex items-center justify-center">
+            <img id="foto-zoom-img" src="" alt="Zoom" class="max-w-full max-h-full object-contain rounded-xl shadow-2xl">
+        </div>
+       
+        <div class="w-full md:w-1/3 flex flex-col justify-center text-left bg-white p-6 rounded-2xl shadow-2xl h-fit md:max-h-[75vh] overflow-y-auto">
+            <p id="texto-zoom-desc" class="font-general text-lg md:text-xl text-purple-950 leading-relaxed tracking-wide">
+            </p>
+        </div>
+    </div>
+</dialog>
+    <script src="script.js"></script>
+</body>
+</html>
